@@ -1,0 +1,29 @@
+
+<%- include('partials/header'); -%>
+ <link rel="stylesheet" href="/css/style.css">
+
+   <h2>Home</h2>
+   
+   <p>  <%= homedata %>   </p>
+   
+   
+   
+   <%    posts.forEach((post)=>{      %>
+    
+    <h1>  <%= post.title  %>   </h1>
+    <!-- <h1>  <%= post.title.substring(0,100)+ "..."  %>    </h1> -->
+    <p>  <%=   post.content  %> </p>
+    <!-- <p>  <%=   post.content.substring(0,100)+ "..."  %> </p> -->
+ 
+ <%  }) %>    
+
+ 
+
+ <%- include('partials/footer'); -%>
+
+ 
+
+ 
+
+
+
